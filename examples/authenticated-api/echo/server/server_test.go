@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oapi-codegen/oapi-codegen/v2/examples/authenticated-api/echo/api"
+	"github.com/jinuthankachan/oapi-codegen/v2/examples/authenticated-api/echo/api"
 	"github.com/oapi-codegen/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -15,7 +15,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	middleware "github.com/oapi-codegen/gin-middleware"
-	"github.com/oapi-codegen/oapi-codegen/v2/examples/petstore-expanded/gin/api"
+	"github.com/jinuthankachan/oapi-codegen/v2/examples/petstore-expanded/gin/api"
 )
 
 func NewGinPetServer(petStore *api.PetStore, port string) *http.Server {

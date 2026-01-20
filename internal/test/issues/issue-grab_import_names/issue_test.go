@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/oapi-codegen/oapi-codegen/v2/pkg/codegen"
+	"github.com/jinuthankachan/oapi-codegen/v2/pkg/codegen"
 	"github.com/stretchr/testify/require"
 )
 

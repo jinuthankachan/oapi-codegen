@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:generate go run github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen --config=models.cfg.yaml ../../petstore-expanded.yaml
-//go:generate go run github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen --config=server.cfg.yaml ../../petstore-expanded.yaml
+//go:generate go run github.com/jinuthankachan/oapi-codegen/v2/cmd/oapi-codegen --config=models.cfg.yaml ../../petstore-expanded.yaml
+//go:generate go run github.com/jinuthankachan/oapi-codegen/v2/cmd/oapi-codegen --config=server.cfg.yaml ../../petstore-expanded.yaml
 
 package api
 
@@ -23,7 +23,7 @@ import (
 	"sync"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oapi-codegen/oapi-codegen/v2/examples/petstore-expanded/echo/api/models"
+	"github.com/jinuthankachan/oapi-codegen/v2/examples/petstore-expanded/echo/api/models"
 )
 
 type PetStore struct {
