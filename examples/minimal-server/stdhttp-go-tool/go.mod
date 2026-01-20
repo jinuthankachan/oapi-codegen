@@ -1,10 +1,10 @@
-module github.com/oapi-codegen/oapi-codegen/v2/examples/minimal-server/stdhttp-go-tool
+module github.com/jinuthankachan/oapi-codegen/v2/examples/minimal-server/stdhttp-go-tool
 
 go 1.24
 
-replace github.com/oapi-codegen/oapi-codegen/v2 => ../../../
+replace github.com/jinuthankachan/oapi-codegen/v2 => ../../../
 
-tool github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen
+tool github.com/jinuthankachan/oapi-codegen/v2/cmd/oapi-codegen
 
 require (
 	github.com/dprotaso/go-yit v0.0.0-20220510233725-9ba8df137936 // indirect
@@ -14,7 +14,7 @@ require (
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
-	github.com/oapi-codegen/oapi-codegen/v2 v2.0.0-00010101000000-000000000000 // indirect
+	github.com/jinuthankachan/oapi-codegen/v2 v2.0.0-00010101000000-000000000000 // indirect
 	github.com/oasdiff/yaml v0.0.0-20250309154309-f31be36b4037 // indirect
 	github.com/oasdiff/yaml3 v0.0.0-20250309153720-d2182401db90 // indirect
 	github.com/perimeterx/marshmallow v1.1.5 // indirect

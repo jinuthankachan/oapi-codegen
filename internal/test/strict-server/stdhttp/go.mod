@@ -1,15 +1,15 @@
-module github.com/oapi-codegen/oapi-codegen/v2/internal/test/strict-server/stdhttp
+module github.com/jinuthankachan/oapi-codegen/v2/internal/test/strict-server/stdhttp
 
 go 1.22.5
 
-replace github.com/oapi-codegen/oapi-codegen/v2 => ../../../../
+replace github.com/jinuthankachan/oapi-codegen/v2 => ../../../../
 
-replace github.com/oapi-codegen/oapi-codegen/v2/internal/test => ../..
+replace github.com/jinuthankachan/oapi-codegen/v2/internal/test => ../..
 
 require (
 	github.com/getkin/kin-openapi v0.133.0
-	github.com/oapi-codegen/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
-	github.com/oapi-codegen/oapi-codegen/v2/internal/test v0.0.0-00010101000000-000000000000
+	github.com/jinuthankachan/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
+	github.com/jinuthankachan/oapi-codegen/v2/internal/test v0.0.0-00010101000000-000000000000
 	github.com/oapi-codegen/runtime v1.1.0
 	github.com/oapi-codegen/testutil v1.1.0
 	github.com/stretchr/testify v1.11.1

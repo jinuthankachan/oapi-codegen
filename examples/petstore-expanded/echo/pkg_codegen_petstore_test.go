@@ -9,9 +9,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	examplePetstoreClient "github.com/oapi-codegen/oapi-codegen/v2/examples/petstore-expanded"
-	examplePetstore "github.com/oapi-codegen/oapi-codegen/v2/examples/petstore-expanded/echo/api"
-	"github.com/oapi-codegen/oapi-codegen/v2/pkg/codegen"
+	examplePetstoreClient "github.com/jinuthankachan/oapi-codegen/v2/examples/petstore-expanded"
+	examplePetstore "github.com/jinuthankachan/oapi-codegen/v2/examples/petstore-expanded/echo/api"
+	"github.com/jinuthankachan/oapi-codegen/v2/pkg/codegen"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/lint"
 )

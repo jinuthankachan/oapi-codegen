@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/gin-gonic/gin"
-	issue1298 "github.com/oapi-codegen/oapi-codegen/v2/internal/test/issues/issue-1298"
+	issue1298 "github.com/jinuthankachan/oapi-codegen/v2/internal/test/issues/issue-1298"
 	"github.com/stretchr/testify/assert"
 )
 

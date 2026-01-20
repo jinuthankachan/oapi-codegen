@@ -1,8 +1,8 @@
-module github.com/oapi-codegen/oapi-codegen/v2/internal/test
+module github.com/jinuthankachan/oapi-codegen/v2/internal/test
 
 go 1.22.5
 
-replace github.com/oapi-codegen/oapi-codegen/v2 => ../../
+replace github.com/jinuthankachan/oapi-codegen/v2 => ../../
 
 require (
 	github.com/getkin/kin-openapi v0.133.0
@@ -14,7 +14,7 @@ require (
 	github.com/kataras/iris/v12 v12.2.6-0.20230908161203-24ba4e8933b9
 	github.com/labstack/echo/v4 v4.11.3
 	github.com/oapi-codegen/nullable v1.0.1
-	github.com/oapi-codegen/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
+	github.com/jinuthankachan/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
 	github.com/oapi-codegen/runtime v1.1.0
 	github.com/oapi-codegen/testutil v1.0.0
 	github.com/stretchr/testify v1.11.1

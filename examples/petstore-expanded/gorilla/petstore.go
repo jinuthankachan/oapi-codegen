@@ -14,7 +14,7 @@ import (
 
 	"github.com/gorilla/mux"
 	middleware "github.com/oapi-codegen/nethttp-middleware"
-	"github.com/oapi-codegen/oapi-codegen/v2/examples/petstore-expanded/gorilla/api"
+	"github.com/jinuthankachan/oapi-codegen/v2/examples/petstore-expanded/gorilla/api"
 )
 
 func main() {

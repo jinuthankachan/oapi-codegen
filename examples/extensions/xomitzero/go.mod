@@ -1,11 +1,11 @@
-module github.com/oapi-codegen/oapi-codegen/v2/examples/extensions/xomitzero
+module github.com/jinuthankachan/oapi-codegen/v2/examples/extensions/xomitzero
 
 go 1.24
 
-replace github.com/oapi-codegen/oapi-codegen/v2 => ../../../
+replace github.com/jinuthankachan/oapi-codegen/v2 => ../../../
 
 require (
-	github.com/oapi-codegen/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
+	github.com/jinuthankachan/oapi-codegen/v2 v2.0.0-00010101000000-000000000000
 	github.com/stretchr/testify v1.11.1
 )
 
