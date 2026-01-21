@@ -53,3 +53,36 @@ func TestEcho5CodeGeneration(t *testing.T) {
 	// Check that the register function is generated correctly:
 	assert.Contains(t, code, "func RegisterHandlers(router EchoRouter, si ServerInterface) {")
 }
+
+func TestEcho5StrictServerGeneration(t *testing.T) {
+	// Input vars for code generation:
+	packageName := "testswagger"
+	opts := Configuration{
+		PackageName: packageName,
+		Generate: GenerateOptions{
+			Echo5Server: true,
+			Strict:      true,
+		},
+	}
+
+	loader := openapi3.NewLoader()
+	loader.IsExternalRefsAllowed = true
+
+	// Get a spec from the test definition in this file:
+	swagger, err := loader.LoadFromData([]byte(testOpenAPIDefinition))
+	assert.NoError(t, err)
+
+	// Run our code generation:
+	code, err := Generate(swagger, opts)
+	assert.NoError(t, err)
+	assert.NotEmpty(t, code)
+
+	// Check that we have valid (formattable) code:
+	_, err = format.Source([]byte(code))
+	assert.NoError(t, err)
+
+	// Check that strict server code is present
+	assert.Contains(t, code, "type StrictHandlerFunc = strictecho5.StrictEchoHandlerFunc")
+	assert.Contains(t, code, "type StrictMiddlewareFunc = strictecho5.StrictEchoMiddlewareFunc")
+	assert.Contains(t, code, "func NewStrictHandler(ssi StrictServerInterface, middlewares []StrictMiddlewareFunc) ServerInterface {")
+}
